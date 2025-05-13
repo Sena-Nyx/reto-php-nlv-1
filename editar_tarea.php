@@ -26,8 +26,8 @@ if ($reg = mysqli_fetch_array($consulta)) {
       <label>Titulo:</label>
       <input type="text" name="titulo" value="<?php echo $reg['titulo'] ?>"><br><br>
 
-      <label>Descripcion:</label>
-      <input type="text" name="descripcion" value="<?php echo $reg['descripcion'] ?>"><br><br>
+      <label>Descripcion:</label> <br>
+      <textarea name="descripcion" cols="30" rows="5"> <?php echo $reg['descripcion'] ?> </textarea><br><br>
 
       <input type="submit" value="Editar">
    </form>
